@@ -10,7 +10,7 @@ or RUN `npm run dev` for development
 - Delete .wwebjs_auth folder
 - Delete node_modules folder
 - RUN `npm install`
-- Edit `node_modules/whatsapp-web.js/src/util/Injected.js` file and comment line 16 `window.Store.Features = window.mR.findModule('FEATURE_CHANGE_EVENT')[0]?.LegacyPhoneFeatures;`
+- Edit `node_modules/whatsapp-web.js/src/util/Injected.js` file and comment line 16 `window.Store.Features = window.mR.findModule('FEATURE_CHANGE_EVENT')[0].LegacyPhoneFeatures;`
 - RUN `npm run start` for production 
 or RUN `npm run dev` for development
 
