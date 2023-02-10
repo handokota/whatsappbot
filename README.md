@@ -6,7 +6,7 @@
 - RUN `npm run start` for production 
 or RUN `npm run dev` for development
 
-## Linux Debian
+## How to fix error in Linux Debian
 - Delete .wwebjs_auth folder
 - Delete node_modules folder
 - RUN `npm install`
