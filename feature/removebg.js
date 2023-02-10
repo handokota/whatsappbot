@@ -21,12 +21,12 @@ const EditPhotoHandler = async (text, msg) => {
             const newPhoto = await EditPhotoRequest(media.data, color)
 
             if (!newPhoto.success) {
-                return msg.reply('terjadi kesalahan.');
+                return msg.reply('terjadi kesalahan');
             }
 
             const chat = await msg.getChat();
             media.data = newPhoto.base64;
-            chat.sendMessage(media, { caption: 'nih' })
+            chat.sendMessage(media, { caption: 'nihh' })
         }
     }
 }
