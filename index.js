@@ -3,8 +3,6 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const { EditPhotoHandler } = require('./feature/removebg');
 const { ChatAIHandler } = require('./feature/openai');
 
-
-
 const client = new Client({
     puppeteer: {
         headless: true,
@@ -12,8 +10,6 @@ const client = new Client({
     },
         authStrategy: new LocalAuth()
 });
-
-
 
 client.on('qr', qr => {
     qrcode.generate(qr, { small: true });
